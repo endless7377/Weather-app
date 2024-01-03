@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:ital,wght@1,300&display=swap');
+
+:root{
+    --assets-color:#EEEEEE;
+    --bg-color:#1e1e1e;
+    --gradientcolor:linear-gradient(to top, #00adb5, #2197a8, #338196, #3c6b80, #3f5768, #3c4c5b, #38424e, #333841, #2f343d, #2a3039, #262c35, #222831);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15vh;
+
+}
+
+.card {
+    background-image:var(--gradientcolor);
+    height: 65vh;
+    width: 30vw;
+    padding: 1.25rem;
+    border-radius: 2.5rem;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color:var(--assets-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-icon-image {
+
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.input-search {
+    height: 3.125rem;
+    width: 18.75rem;
+    border: none;
+    border-radius: 2.5rem;
+    margin-right: 0.625rem;
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+.main-weather-content {
+    margin-top: 3.75rem;
+}
+
+.weather-icon-img {
+    height: 9.375rem;
+    width: 9.375rem;
+}
+.main-content-bar{
+    font-size: 1.563rem;
+}
+/* this is for the number showing the temperature in the card */
+.temp-num {
+    color: var(--assets-color);
+    margin-top: 0.625rem;
+    margin-bottom: 0.313rem;
+    font-weight: bold;
+}
+/* this is the div of the showcase of the place entered  */
+.weather-place{
+    color: var(--assets-color);
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+/*  this the main div of the other two analytics in the wesite */
+.other-analytics {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    padding-top: 1.875rem;
+}
+/* this is the common class of the icon of the two analytic */
+.analytic-icons{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+/* this is the text of the analytics showing the stats  */
+.text-rep{
+    color: var(--assets-color);
+}
